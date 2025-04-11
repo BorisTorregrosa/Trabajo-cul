@@ -1,0 +1,546 @@
+*{
+    padding: auto;
+    margin: auto;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(https://png.pngtree.com/background/20240406/original/pngtree-handdrawn-programming-icons-on-grungy-white-brick-wall-texture-photo-picture-image_8394443.jpg);
+}
+
+
+.navegador{
+    position: absolute; /*para posicionarlo en un lugar especifico*/
+    right: 2em ; /*mover hacia la derecha*/
+    top: 40px; /*mover hacia arriba o abajo*/
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.a{ /*aqui se quita el subrayado del texto y se cambia de color*/
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px ;
+}
+.a:hover{
+    color: #838383;
+    transition-duration: .3s;
+}
+
+.label_icono{
+    display:none;
+}
+
+.icono{
+    width: 50x;
+    height: 50px;
+    position: absolute;
+    left: 90%;
+    top: 4%;
+}
+#menu{
+    display: none;
+}
+.menu:checked + .navegador{
+    height: calc(100vh - 80px);
+}
+#menu_burger:checked + .titulo { /*lo hice porque se me mostraba el titulo por encima*/
+    display: none;
+}
+.imagen{
+    width: 100px; /*ancho de la imagen*/
+    height: 75px; /*alto de la imagen*/
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+.nombre{
+    color: beige;
+    position: absolute;
+    left: 130px;
+    top:40px;
+}
+.barra{
+    background-color: rgb(0, 0, 0);
+}
+.titulo{
+    font-size:50px;
+    position: absolute; /*para posicionarlo en un lugar especifico*/
+    max-width: 50%;
+    right: 32%; /*mover hacia la derecha*/
+    top: 175px; /*mover hacia arriba o abajo*/
+    color: rgb(0, 0, 0);
+}
+
+.parent-titulo {
+    background-image:url(https://static.vecteezy.com/system/resources/previews/032/438/170/non_2x/pc-retro-y2k-desktop-black-and-white-lofi-wallpaper-nostalgic-computer-interface-2d-outline-scene-cartoon-flat-illustration-upload-files-sunshine-peony-line-lo-fi-aesthetic-background-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+    gap: 8px;
+    border: 7px solid black;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+
+.parent-grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 5px;
+    padding: 20px;
+}
+    
+.div1-grid1 {
+    margin: 0;
+    grid-row: span 2 / span 2;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/020/500/964/non_2x/white-drawing-paper-texture-suitable-for-a-background-used-for-vintage-wallpapers-and-designs-concept-writing-with-a-pencil-close-up-paper-concept-free-photo.jpg);
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 22px;
+}
+
+.div2-grid1 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/020/500/964/non_2x/white-drawing-paper-texture-suitable-for-a-background-used-for-vintage-wallpapers-and-designs-concept-writing-with-a-pencil-close-up-paper-concept-free-photo.jpg);
+    border: 3px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0px;
+    font-size: 22px;
+}
+
+.div3-grid1 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/020/500/964/non_2x/white-drawing-paper-texture-suitable-for-a-background-used-for-vintage-wallpapers-and-designs-concept-writing-with-a-pencil-close-up-paper-concept-free-photo.jpg);
+    border: 3px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 22px;
+}
+
+.div4-grid1 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-row-start: 5;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/020/500/964/non_2x/white-drawing-paper-texture-suitable-for-a-background-used-for-vintage-wallpapers-and-designs-concept-writing-with-a-pencil-close-up-paper-concept-free-photo.jpg);
+    border: 3px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 22px;
+}
+
+.div5-grid1 {
+    margin: 0;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 6;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/020/500/964/non_2x/white-drawing-paper-texture-suitable-for-a-background-used-for-vintage-wallpapers-and-designs-concept-writing-with-a-pencil-close-up-paper-concept-free-photo.jpg);
+    border: 3px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 22px;
+}
+
+.div6-grid1 {
+    margin: 0;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/020/500/964/non_2x/white-drawing-paper-texture-suitable-for-a-background-used-for-vintage-wallpapers-and-designs-concept-writing-with-a-pencil-close-up-paper-concept-free-photo.jpg);
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 3px;
+    font-size: 22px;
+}
+
+.div7-grid1 {
+    margin: 0;
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/020/500/964/non_2x/white-drawing-paper-texture-suitable-for-a-background-used-for-vintage-wallpapers-and-designs-concept-writing-with-a-pencil-close-up-paper-concept-free-photo.jpg);
+    border: 3px solid black;
+    padding: 20px;
+    border-radius:3px;
+    font-size: 22px;
+}
+
+.div8-grid1 {
+    margin: 0;
+    grid-row: span 7 / span 7;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/020/500/964/non_2x/white-drawing-paper-texture-suitable-for-a-background-used-for-vintage-wallpapers-and-designs-concept-writing-with-a-pencil-close-up-paper-concept-free-photo.jpg);
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 3px;
+    font-size: 22px;
+}
+
+.parent-borde {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0px;
+    padding: 20px;
+}
+    
+.div1-borde {
+    grid-column: span 8 / span 8;
+    grid-row: span 6 / span 6;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/020/500/964/non_2x/white-drawing-paper-texture-suitable-for-a-background-used-for-vintage-wallpapers-and-designs-concept-writing-with-a-pencil-close-up-paper-concept-free-photo.jpg);
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 22px;
+    
+}
+
+.parent-cuadro {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    padding: 30px;
+}
+    
+.div1-cuadro {
+    margin: 0;
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    background-image: url(https://us.123rf.com/450wm/malven/malven1606/malven160600050/58750938-textura-%C3%A1spera-de-papel-gris-o-tela-para-un-fondo-o-para-fondo-de-pantalla-con-espacio-vac%C3%ADo.jpg);
+    border: 3px solid black;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.div2-cuadro {
+    margin: 0;
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    background-image: url(https://us.123rf.com/450wm/malven/malven1606/malven160600050/58750938-textura-%C3%A1spera-de-papel-gris-o-tela-para-un-fondo-o-para-fondo-de-pantalla-con-espacio-vac%C3%ADo.jpg);
+    border: 3px solid black;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.div3-cuadro {
+    margin: 0;
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    background-image: url(https://us.123rf.com/450wm/malven/malven1606/malven160600050/58750938-textura-%C3%A1spera-de-papel-gris-o-tela-para-un-fondo-o-para-fondo-de-pantalla-con-espacio-vac%C3%ADo.jpg);
+    border: 3px solid black;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.color{
+    color: rgb(54, 54, 54);
+} 
+
+
+
+.parent-footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+}
+    
+.div1-footer {
+    grid-column: span 5 / span 5;
+    grid-row: span 2 / span 2;
+    padding-top: 180px;
+    color: black;
+}
+
+.titulo-linea{
+    text-align: center;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    
+}
+
+
+.div2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.div3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.div4 {
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+.div5 {
+    grid-column-start: 1;
+    grid-row-start: 5;
+}
+
+.div6 {
+    grid-column-start: 1;
+    grid-row-start: 6;
+}
+
+.div7 {
+    grid-column-start: 1;
+    grid-row-start: 7;
+}
+
+.div8 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    content:'';
+    width: 5px;
+    height: 10vh;
+    background-color: black;
+}
+
+.div9 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    content:'';
+    width: 5px;
+    height: 10vh;
+    background-color: black;
+}
+
+.div10 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    content:'';
+    width: 5px;
+    height: 10vh;
+    background-color: black;
+}
+
+.div11 {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    content:'';
+    width: 5px;
+    height: 10vh;
+    background-color: black;
+}
+
+.div12 {
+    grid-column-start: 2;
+    grid-row-start: 5;
+    content:'';
+    width: 5px;
+    height: 10vh;
+    background-color: black;
+}
+
+.div13 {
+    grid-column-start: 2;
+    grid-row-start: 6;
+    content:'';
+    width: 5px;
+    height: 10vh;
+    background-color: black;
+}
+
+.div14 {
+    grid-column-start: 2;
+    grid-row-start: 7;
+    content:'';
+    width: 5px;
+    height: 10vh;
+    background-color: black;
+}
+
+.div15 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.div16 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.div17 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div18 {
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+.div19 {
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+.div20 {
+    grid-column-start: 3;
+    grid-row-start: 6;
+}
+
+.bolita {
+    position: relative;
+    top: 28px;
+    right:6px;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border: 3px solid rgb(252, 0, 0);
+    border-radius: 50%;
+}
+
+.recuadro_tarea{
+    margin-bottom: 30px;
+    position: relative;
+    top:20px;
+    width: 50vw;
+    height: 20vh;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(85, 85, 85);
+}
+.caja_texto{
+    width: 36vw;
+    height: 7vh;
+    position: relative;
+    top: -3px;
+    border: 4px solid;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.boton{
+    width: 3vw;
+    height: 7vh;
+    position: relative;
+    top: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-image: url(https://cdn-icons-png.flaticon.com/256/117/117885.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.boton:hover{
+    background-color: rgb(141, 141, 141);
+}
+
+.cuadro_tarea{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 10px;
+    width: 60vw;
+    height: 10vh;
+    padding: 20px;
+    background-color: beige;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.boton_eliminar{
+    width: 2vw;
+    height: 5vh;
+    position: relative;
+    bottom: 5px;
+    left: 30px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1017/1017530.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.texto{
+    width:40vw ;
+    position: relative;
+    bottom: 5px;
+    right: 3px;
+    font-size: 20px;
+}
+
+.check{
+    width: 3vw;
+    height: 3vh;
+    position: relative;
+    right: 30px;
+}
+
+#tarea:checked ~.texto{
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(114, 113, 113);
+    text-underline-offset: -0.2em;
+    color: #838383;
+}
+
+
+.boton_eliminar:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+@media(width <= 768px) {
+    .label_icono{
+        display:block;
+    }
+    .navegador{
+    width: 100vw;
+    height: 0;
+    position: absolute; /*para posicionarlo en un lugar especifico*/
+    right: 2em ; /*mover hacia la derecha*/
+    top: 80px; /*mover hacia arriba o abajo*/
+    display: flex;
+    gap: 20px;
+    transition: all .3s ease-in-out;
+    background-color:rgba(0, 0, 0, 0.801);
+    flex-direction: column;
+    z-index: 1000;
+    margin: 0;
+    }
+    .a{ /*aqui se quita el subrayado del texto y se cambia de color*/
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 3em ;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .a:hover{
+        color: #dbd8d8;
+        background-color: rgb(95, 95, 95);
+        transition-duration: .3s;
+    }
+    
+}
+        
